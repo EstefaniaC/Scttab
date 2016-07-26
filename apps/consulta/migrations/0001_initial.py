@@ -11,19 +11,10 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='coordinador',
+            name='consulta',
             fields=[
-                ('id', models.AutoField(auto_created=True, serialize=False, verbose_name='ID', primary_key=True)),
-                ('nombre', models.CharField(max_length=50)),
-                ('apellido_paterno', models.CharField(max_length=50)),
-                ('apellido_materno', models.CharField(max_length=50)),
-            ],
-        ),
-        migrations.CreateModel(
-            name='municipio',
-            fields=[
-                ('id', models.AutoField(auto_created=True, serialize=False, verbose_name='ID', primary_key=True)),
-                ('nombre_municipio', models.CharField(max_length=50)),
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('numero_registro', models.IntegerField()),
             ],
         ),
     ]
