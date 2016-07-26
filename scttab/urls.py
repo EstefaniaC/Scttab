@@ -17,7 +17,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^registro', include('apps.registro.urls', namespace="registro"), name='registro'),
+    url(r'^registroNuevo', include('apps.registro.urls', namespace="registro"), name='registro'),
     url(r'^consulta', include('apps.consulta.urls', namespace="consulta"), name='consulta'),
     url(r'^usuarios', include('apps.usuarios.urls', namespace="usuarios"), name='usuarios'),
     url(r'^home', include('apps.home.urls', namespace="home"), name="home"),
