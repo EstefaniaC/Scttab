@@ -1,0 +1,56 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{% static 'C:\proyectos\scttab\static\bootstrap\css\bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'C:\proyectos\scttab\static\css\styles.css' %}">
+  <link rel="stylesheet" href="{% static 'C:\proyectos\scttab\static\jquery-ui\jquery-ui.theme.css' %}">
+  <link rel="stylesheet" href="{% static 'C:\proyectos\scttab\static\jquery-ui\jquery-ui.structure.css' %}">
+      <link rel="icon" type="img/png" href="static/img/logo.png">
+
+	<title>{% block title %} Secretaria de Comunicaciones y Transportes {% endblock %}</title>
+</head>
+<body style="background: #F2F2F2">
+  <div class="container" style="background: #FFFFFF">
+    <div class="row">
+      {% block header%}
+        <img class="img img-responsive" src="{% static 'C:\proyectos\scttab\static\img\banner3.png' %}"/>
+      {% endblock %}
+      <div class"row">  <!--fila de menu-->
+        <div class="col-mid-12">
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>-->
+                <a class="navbar-brand" href="home" >SCT <span class="glyphicon glyphicon-home"></span></a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="registro">Registrar Nuevo Oficio <span class="glyphicon glyphicon-file"></span></a></li>
+                  <li><a href="revisiones">Seguimiento <span class="glyphicon glyphicon-pencil"></span></a></li>
+                  <li><a href="consulta">Consultar Oficio <span class="glyphicon glyphicon-folder-open"></span></a></li>
+                  <li><a href="productividad">Productividad <span class="glyphicon glyphicon-stats"></span></a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+        </div>
+      </div>
+  {% block content %}
+  {% endblock %}
+
+  {% block footer %}
+  <hr>
+  <h5 align="center">Todos los derechos reservados </h5>
+  {% endblock %}  
+</body>
+</html>

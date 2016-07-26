@@ -1,0 +1,91 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% block content %}
+<h1 align="center"> Registrar Nuevo Oficio </h1>
+  <hr width="90%">
+<div class="container">
+    <form class="form-horizontal">
+        <div class="form-group">
+          <br>
+          <label for="nombre" class="col-sm-1 control-label">Nombre</label>
+          <div class="col-sm-4">
+              <input type="text" class="form-control" id="nombre" name="Nombre">
+          </div>
+          <label for="empresa" class="col-sm-1 control-label">Empresa</label>
+          <div class="col-sm-4">
+              <input type="text" class="form-control" id="empresa">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Folio" class="col-sm-1 control-label">Numero de Folio</label>
+          <div class="col-sm-4">
+              <input type="text" class="form-control" id="folio">
+          </div>
+          <label for="fecha_recibido" class="col-sm-1 control-label">Fecha de Recibido</label>
+          <div class="col-sm-2">
+              <input type="date" class="form-control" id="fecha_recibido">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="asunto" class="col-sm-1 control-label">Asunto</label>
+          <div class="col-sm-4">
+              <input type="text" class="form-control" id="asunto">
+          </div>
+          <label for="modalidad" class="col-sm-1 control-label">Modalidad</label>
+          <div class="col-sm-4">
+              <input type="text" class="form-control" id="modalidad">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="numero_oficio" class="col-sm-1 control-label">Numero de Oficio</label>
+          <div class="col-sm-4">
+              <input type="text" class="form-control" id="numero_oficio">
+          </div>
+          <label for="fecha_entrega" class="col-sm-1 control-label">Fecha de Entrega</label>
+          <div class="col-sm-2">
+              <input type="date" class="form-control" id="fecha_entrega">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="coordinador" class="col-sm-1 control-label">Coordinador Responsable</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="coordinador">
+          </div>
+          <label for="municipio" class="col-sm-1 control-label">Municipio a cargo</label>
+          <div class="col-sm-4">
+            <select name=municipio>
+              <option>        </option>
+              <option>Balancan</option>
+              <option>Cardenas</option>
+              <option>Centla</option>
+              <option>Centro</option>
+              <option>Comalcalco</option>
+              <option>Cunduacan</option>
+              <option>Emiliano Zapata</option>
+              <option>Huimanguillo</option>
+              <option>Jalapa</option>
+              <option>Jalpa de Mendez</option>
+              <option>Jonuta</option>
+              <option>Macuspana</option>
+              <option>Nacajuca</option>
+              <option>Paraiso</option>
+              <option>Tacotalpa</option>
+              <option>Teapa</option>
+              <option>Tenosique</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="observacion" class="col-sm-1 control-label">Obeservación</label>
+          <div class="col-sm-8">
+            <textarea name="textarea" rows="10" cols="60"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Guardar</button>
+          </div>
+        </div>
+    </form>
+</div>
+{% endblock%}

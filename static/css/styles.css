@@ -1,0 +1,61 @@
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #3AA9E8;
+}
+
+.footer .container .textos {
+  margin: 10px 0;
+  text-align: center;
+}
+
+/*
+#basecontenedor{
+    background-image: url("/static/notebook.png");
+    background-repeat: repeat;
+}
+*/
+.titulos{
+    margin-top: 2px;
+    margin-bottom: 23px;
+}
+
+.margin_pager .pager{
+    margin: 0px;
+}
+
+html,body{
+height:100%;
+}
+
+#contenedor{
+height: auto;
+min-height:92%;
+}
+
+.col-center-block {
+    margin-top: 60px;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centrado {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.espacio_icons{
+    margin-left: 10px;
+
+}
+
+.ui-datepicker{
+    z-index: 9999 !important;
+}
