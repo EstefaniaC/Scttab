@@ -13,3 +13,7 @@ class Registro_Solicitante(models.Model):
 	coordinador = models.CharField(max_length=50)
 	fecha_entrega_DGTEC = models.DateField()
 	observacion = models.TextField(max_length=200)	
+	observacion = models.TextField(max_length=200)	
+	observacion = models.TextField(max_length=200)	
+	observacion = models.TextField(max_length=200)	
+	observacion = models.TextField(max_length=200)	
